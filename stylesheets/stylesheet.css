@@ -256,6 +256,37 @@ form {
   padding: 20px;
 }
 
+/**************************************
+User-defined Styles
+**************************************/
+div.imgingallery {
+    margin: 10px 15px;
+    border: 1px solid #CCCCCC;
+    float: left;
+    width: 180px;
+}
+
+div.imgingallery:hover {
+    border: 1px solid #777777;
+}
+
+div.imgingallery img {
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid;
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+hr {
+    clear: left;
+}
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -267,7 +298,7 @@ Full-Width Styles
 .inner {
   position: relative;
   max-width: 640px;
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin: 0 auto;
 }
 
