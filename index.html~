@@ -15,13 +15,13 @@
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-      <header class="inner">
-        <a id="forkme_banner" href="https://github.com/jlwangPoincare">View on GitHub</a>
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jlwangPoincare">View on GitHub</a>
 
-        <h1 id="project_title">jlwangPoincare的个人小站</h1>
-        <h2 id="project_tagline"></h2>
+          <h1 id="project_title">jlwangPoincare的个人小站</h1>
+          <h2 id="project_tagline"></h2>
 
-      </header>
+        </header>
     </div>
 
     <!-- MAIN CONTENT -->
