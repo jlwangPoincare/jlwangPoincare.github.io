@@ -125,6 +125,10 @@ footer a {
   text-decoration: underline;
 }
 
+a.section_name, a.essay_title {
+  color: #222222;
+}
+
 em {
   font-style: italic;
 }
