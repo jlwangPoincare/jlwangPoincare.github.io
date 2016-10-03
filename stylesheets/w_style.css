@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* MeyerWeb CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************
+Designing style
+************/
+body {
+   	color:#373737;
+   	background: #212121;
+    font-size: 100%;
+    font-family: 'WenQuanYi Micro Hei', 'Microsoft YaHei', 'Hei', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #222222;
+}
+
+h1, #site_name {
+    color: #FFFFFF;
+    font-size: 2.25em;
+}
+
+#site_name a, #site_name a:hover, #site_name a:focus, #site_name a:active {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+h2, #site_subtitle {
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+p {
+    margin: 10px 0;
+}
+
+footer p {
+    color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #007edf;
+    text-shadow: none;
+/*
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+*/
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: underline;
+    text-shadow: 1px 1px gold;
+}
+
+footer a {
+    color: #F2F2F2;
+    text-decoration: underline;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ins {
+    text-decoration: underline;
+}

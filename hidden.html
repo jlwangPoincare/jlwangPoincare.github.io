@@ -2,13 +2,15 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/w_style.css">
     <title>隐藏页面</title>
   </head>
 
   <body>
-    <h1 id="site_name">jlwangPoincare的个人博客</h1>
+    <h1 id="site_name"><a href="index.html" title="博客首页" target="_self">jlwangPoincare的个人博客</a></h1>
     <h2 id="site_subtitle">我心匪石，不可转也</h2>
+    <main>
     <h3>隐藏页面</h3>
     <p>这是一个隐藏的页面，可以放一些有趣的/有用的东西，以及进行一些实验。</p>
     <h4>关于页面设计规范</h4>
@@ -22,9 +24,13 @@
       <li>以后也许会把导航栏也放在header/banner部分</li>
       <li>footer上放Github pages的声明以及我的联系方式</li>
       <li>main的部分应该主要就是文章。当然首页和文章列表这两个页面会不太一样</li>
-      <li>文章的标题考虑用h3，文章的章节标题考虑用h4，h5</li>
+      <li>文章的标题考虑用h3</li>
+      <li>文章可能也会有副标题，考虑用h4.subtitle。文章的章节标题用h4，考虑到结构上的需要，内部可以有三级标题h4，h5，h6。</li>
+      <li>首页及文章列表页上应该有h3的“文章列表”</li>
+      <li>所以首页及文章列表页上的各个文章题目本身应该是li.essay_title</li>
       <li>考虑要修改一些原本提供的设计，从而简化页面的结构</li>
       <li>具体用到什么元素的时候再为其设计格式</li>
     </ul>
+    </main>
   </body>
 </html>
