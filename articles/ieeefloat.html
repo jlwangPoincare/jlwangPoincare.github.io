@@ -7,6 +7,32 @@
     <meta name="description" content="IEEE浮点数规范是个有趣的事儿">
 
     <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/w_style.css">
+    <script>
+function prepareEventHandler()
+{
+    var subTitleNode = document.getElementById("site_subtitle");
+    //var titleA = titleNode.getElementsByTagName("a")[0];
+    subTitleNode.onmouseover = function ()
+    {
+        if (this.innerHTML == "我心匪石，不可转也")
+        {
+            this.innerHTML = "嘿！你抓到我了！";
+        }
+    }
+    subTitleNode.onmouseout = function ()
+    {
+        if (this.innerHTML == "嘿！你抓到我了！")
+        {
+            this.innerHTML = "我心匪石，不可转也";
+        }
+    }
+}
+
+window.onload = function ()
+{
+    prepareEventHandler();
+}
+    </script>
 
     <title>IEEE浮点数规范是个有趣的事儿</title>
   </head>
@@ -32,13 +58,13 @@
         <p>说得具体点，比如说这么一小段代码：</p>
         <pre>// C++ code
 float a = 3.0f;
-cout << a == 3.0f << endl;
+cout &lt;&lt; a == 3.0f &lt;&lt; endl;
 
 float b = 5.0f;
 float c = b - a;
 float d = (b + a) / 2.0f;
-cout << c == 2.0f << endl;
-cout << d == 4.0f << endl;
+cout &lt;&lt; c == 2.0f &lt;&lt; endl;
+cout &lt;&lt; d == 4.0f &lt;&lt; endl;
         </pre>
         <p>这段代码能够准确地执行全部输出1吗？虽然这种事情试一下是最好的回答方式，但我倒是真的挺想从原理上了解一下。而且我早就知道IEEE浮点数规范大体上是怎么回事，只是对一些细节不能烂熟于心。于是我就查了查网上的资料，有了这篇文章。</p>
         <h4>随手写的一些总结</h4>
