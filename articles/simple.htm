@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Cookie Clicker</title>
+    <script>
+var cookies = 0;
+var successFlag = false;
+var listClicker = [];
+var isInitializedClicker = false;
+var intervalHandleClicker;
+var timeInitClicker;
+var magicNumberClicker = 50;
+var costClicker = 20;
+
+//Number.MAX_SAFE_INTEGER;
+function Clicker() {
+    this.make = function() {
+        hitButton();
+    }
+}
+
+function update() {
+    var countStr = cookies.toString();
+    document.getElementById("demo").innerHTML = countStr;
+}
+
+function hitButton () {
+    if (cookies >= Number.MAX_SAFE_INTEGER) {
+        if (!successFlag) {
+            alert("You succeeded! You've made cookies for the whole universe!");
+            successFlag = true;
+            // Stop every interval
+            clearInterval(intervalHandleClicker);
+        }
+        return;
+    }
+    cookies += 1;
+    update();
+}
+
+function operateClicker() {
+    var now = new Date();
+    var i = Math.round((now - timeInitClicker) / 100) % magicNumberClicker;
+    while (i < listClicker.length) {
+        listClicker[i].make();
+        i += magicNumberClicker;
+    }
+}
+
+function buyClicker () {
+    if (cookies < costClicker) {
+        return;
+    }
+    cookies -= costClicker;
+    update();
+    var instanceClicker = new Clicker();
+    listClicker.push(instanceClicker);
+    if (!isInitializedClicker) {
+        isInitializedClicker = true;
+        timeInitClicker = new Date();
+        operateClicker();
+        intervalHandleClicker = setInterval(operateClicker, 100);
+    }
+}
+
+window.onload = function () {
+    var clickbt = document.getElementById("clickButton");
+    clickbt.onclick = hitButton;
+    var buyClickerbt = document.getElementById("buyClickerButton");
+    buyClickerButton.onclick = buyClicker;
+}
+    </script>
+  </head>
+  <body>
+    <div id="sample" width="100%">
+      <p>Cookies made: <span id="demo">0</span></p>
+    </div>
+    <button id="clickButton">Click me to make a cookie!</button>
+    <button id="buyClickerButton">Buy a clicker with 20 cookies</button>
+  </body>
+</html>

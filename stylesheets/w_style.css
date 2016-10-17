@@ -70,32 +70,46 @@ h1, h2, h3, h4, h5, h6 {
     color: #222222;
 }
 
-h1, #site_name {
+#site_name {
     color: #FFFFFF;
-    font-size: 2.25em;
+    font-size: 2.5em;
 }
 
-#site_name a, #site_name a:hover, #site_name a:focus, #site_name a:active {
+#site_name a:link, #site_name a:hover, #site_name a:focus, #site_name a:active {
     text-decoration: none;
     color: #FFFFFF;
     text-shadow: none;
 }
 
-h2, #site_subtitle {
+#site_subtitle {
     color: #FFFFFF;
-    font-size: 1em;
+    font-size: 1.25em;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.25em;
+    text-align: right;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 1.6em;
 }
 
-h5, h6 {
-    font-size: 1em;
+h5 {
+    font-size: 1.4em;
+}
+
+h6 {
+    font-size: 1.2em;
 }
 
 p {
@@ -158,7 +172,7 @@ sup {
 .inner {
   position: relative;
   max-width: 640px;
-  padding: 10px 10px;
+  padding: 10px 0px;
   margin: 0 auto;
 }
 
@@ -173,8 +187,8 @@ sup {
   background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 #header_wrap {
